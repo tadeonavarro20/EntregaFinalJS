@@ -4,13 +4,6 @@
   box-sizing: border-box;
 }
 
-.header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  background-color: white;
-}
 .header .navbar {
   display: flex;
   flex-direction: column;
@@ -53,27 +46,27 @@
 }
 .header .navbar .navProductos {
   margin-top: 1rem;
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+.header .navbar .navProductos ul {
+  display: flex;
+  justify-content: center;
 }
 .header .navbar .navProductos ul li {
-  list-style: none;
-  display: flex;
-  display: inline;
-  margin: 0.8rem;
+  list-style-type: none;
 }
-.header .navbar .navProductos ul li .botonesCategoria {
-  color: white;
-  background-color: black;
-  border-radius: 0.5rem;
-}
-.header .navbar .navProductos ul li .botonesCategoria:hover {
-  background-color: white;
+.header .navbar .navProductos ul li a {
+  text-decoration: none;
+  margin: 1rem;
+  font-size: 1.1rem;
   color: black;
+  font-weight: 600;
 }
 
 .mainInicio .carousel {
   display: flex;
   justify-content: center;
-  margin-top: 12rem;
 }
 .mainInicio .carousel .carouselCont {
   display: flex;
@@ -94,43 +87,30 @@
 .mainInicio .carousel .next {
   background-color: black;
 }
+.mainInicio .destacados {
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem;
+}
 .mainInicio .destacadosVenta {
   display: flex;
-  align-items: center;
+  justify-content: center;
   margin-top: 6rem;
-  flex-direction: column;
-  background-color: black;
-  border-radius: 20rem;
 }
-.mainInicio .destacadosVenta .destacados {
-  color: white;
-}
-.mainInicio .destacadosVenta .todosDestacados {
-  display: flex;
-}
-.mainInicio .destacadosVenta .todosDestacados .card {
+.mainInicio .destacadosVenta .card {
   margin: 3rem;
-  border: solid black 2px;
-  border-radius: 5px;
+  border: solid black 1px;
 }
-.mainInicio .destacadosVenta .todosDestacados .card img {
+.mainInicio .destacadosVenta .card img {
   height: 21rem;
 }
-.mainInicio .destacadosVenta .todosDestacados .card .card-body p {
+.mainInicio .destacadosVenta .card .card-body p {
   color: black;
   font-weight: 600;
 }
-.mainInicio .destacadosVenta .todosDestacados .card .card-body .boton {
+.mainInicio .destacadosVenta .card .card-body .boton {
   background-color: black;
   border: none;
 }
-.mainInicio .destacadosVenta .todosDestacados .card .card-body .boton:hover {
-  background-color: white;
-  color: black;
-  border: solid black 1px;
-}
-.mainInicio .destacadosVenta .todosDestacados .card:hover {
-  box-shadow: 5px 5px 200px rgb(255, 255, 255);
-}
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=css.styles.css.map */

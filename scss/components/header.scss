@@ -1,0 +1,113 @@
+.header{
+   position: fixed;
+   width: 100%;
+   top: 0;
+   z-index: 1000;
+   background-color: white;
+    .navbar{
+      display: flex;
+      flex-direction: column;
+      padding: 0%;
+      
+        .buscador{
+           display: flex;
+           justify-content: center;
+           background-color: black;
+           width: 100%;
+           height: 8rem;
+           align-items: center;
+           justify-content: space-between;
+           
+           a{
+             margin-right: 3rem;
+              text-decoration: none;
+               font-size: 2rem;
+               font-family:'Times New Roman', Times, serif;
+               color: white;
+               margin-left: 1rem;
+
+          }
+
+           form{
+               display: flex;
+               align-items: center;
+
+                 input{
+                  height: 2.5rem;
+                  width: 37rem;
+                 }
+                 button{
+                    color: white;
+                    height: 3rem;
+                    background-color: black;
+                    border: none;
+
+                 }
+           }
+            .carrito{
+              display: flex;
+              align-items: center;
+
+                   img{
+                    
+                   } 
+                   
+            }
+        }
+      
+      
+
+
+
+
+        .navProductos{
+              
+              margin-top: 1rem;
+                    ul{
+                        
+                        
+                        
+                       li{
+                        list-style: none;
+                        display: flex;
+                        display: inline;
+                        margin: 0.8rem;
+                        
+                           .botonesCategoria{
+                                color:white;
+                                background-color: black;
+                                border-radius: .50rem;
+                                 
+                             
+
+                           }
+
+                         .botonesCategoria:hover{
+                           background-color: white;
+                           color: black;
+                         }
+
+
+
+                       }
+
+
+
+
+
+
+                    }
+
+
+
+
+
+
+
+
+
+
+        }
+    }
+
+}
