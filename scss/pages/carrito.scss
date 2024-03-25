@@ -1,0 +1,176 @@
+.mainCarrito{
+   h1{
+    text-align: center;
+    margin-top: 6rem;
+   }
+
+   .volver{
+         margin-left: 9rem;
+    a{
+        text-decoration: none;
+        img{
+            width: 3.5rem;
+        }
+    }
+    button{
+
+        background-color: black;
+        border: none;
+        
+        width: 15rem;
+        font-size: 20px;
+         a{
+          text-decoration: none;
+          color: white;
+         }
+
+   }
+   }
+
+   .contenedorCarrito{
+     display: flex;
+     flex-direction: column;
+     
+     
+     
+    .carritoVacio{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        
+    
+     }
+    
+     .carritoProductos{
+       display: flex;
+       flex-direction: column;
+       gap: 1rem;
+       align-items: center;
+       
+       
+       
+
+
+       .borde{
+        
+            border: solid black 2px;
+            
+            
+            
+            
+    
+        .carritoProducto{
+            display: flex;
+            justify-content: space-between;
+            
+            
+            
+            
+    
+         .carritoImagen{
+             width: 3rem;
+             border-radius: 1rem;
+             
+             
+             
+         }
+    
+         .carritoTitulo{
+           margin-right: 5rem;
+           
+           h3{
+             font-size: 20px;
+           }
+    
+         }
+    
+         .carritoCantidad{
+            margin-right: 3rem;
+            text-align: center;
+           
+            
+         }
+    
+         .carritoPrecio{
+             margin-right: 3rem;
+             text-align: center;
+             
+    
+         }
+    
+         .carritoSubtotal{
+             margin-right: 3rem;
+             text-align: center;
+             
+         }
+         
+         .carritoEliminar{
+             border: none;
+             background-color: white;
+             
+             
+         }
+     }
+    
+    
+    
+       }
+    
+        
+     }
+
+  .carritoAcciones{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+
+    
+    
+
+
+    .accionesIzquierda{
+      .accionVaciar{
+          margin-right: 27rem;
+          background-color: black;
+        color: white;
+        border-radius: 1rem;
+        font-size: 1.2rem;
+        
+      }
+      .accionVaciar:hover{
+        background-color: white;
+        color: black;
+      }
+    }
+
+    .accionesDerecha{
+       align-items: center ;
+       p{
+        margin: 0;
+       }
+      button{
+        background-color: black;
+        color: white;
+        border-radius: 1rem;
+        margin-top: 10px;
+        font-size: 1.5rem;
+      }
+      button:hover{
+        background-color: white;
+        color: black;
+      }
+    }
+    
+  }
+
+
+    .carrito-comprado{
+      display: flex;
+      justify-content: center;
+    }
+   }
+
+   
+}
+

@@ -159,12 +159,17 @@
 }
 .mainCarrito .contenedorCarrito {
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
-.mainCarrito .contenedorCarrito .carritoVacio {
+.mainCarrito .contenedorCarrito p {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 12rem;
+}
+.mainCarrito .contenedorCarrito p h3 {
+  font-size: 27px;
 }
 .mainCarrito .contenedorCarrito .carritoProductos {
   display: flex;
@@ -210,42 +215,33 @@
   justify-content: center;
   margin-top: 3rem;
 }
-.mainCarrito .contenedorCarrito .carritoAcciones .accionesIzquierda .accionVaciar {
+.mainCarrito .contenedorCarrito .accionesIzquierda .accionVaciar {
   margin-right: 27rem;
   background-color: black;
   color: white;
   border-radius: 1rem;
   font-size: 1.2rem;
 }
-.mainCarrito .contenedorCarrito .carritoAcciones .accionesIzquierda .accionVaciar:hover {
+.mainCarrito .contenedorCarrito .accionesIzquierda .accionVaciar:hover {
   background-color: white;
   color: black;
 }
-.mainCarrito .contenedorCarrito .carritoAcciones .accionesDerecha {
+.mainCarrito .contenedorCarrito .accionesDerecha {
   align-items: center;
 }
-.mainCarrito .contenedorCarrito .carritoAcciones .accionesDerecha p {
+.mainCarrito .contenedorCarrito .accionesDerecha p {
   margin: 0;
 }
-.mainCarrito .contenedorCarrito .carritoAcciones .accionesDerecha button {
+.mainCarrito .contenedorCarrito .accionesDerecha button {
   background-color: black;
   color: white;
   border-radius: 1rem;
   margin-top: 10px;
   font-size: 1.5rem;
 }
-.mainCarrito .contenedorCarrito .carritoAcciones .accionesDerecha button:hover {
+.mainCarrito .contenedorCarrito .accionesDerecha button:hover {
   background-color: white;
   color: black;
 }
-.mainCarrito .contenedorCarrito .carrito-comprado {
-  display: flex;
-  justify-content: center;
-}
 
-.disabled{
-  display: none;
-}
-
-
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=stytles.css.map */

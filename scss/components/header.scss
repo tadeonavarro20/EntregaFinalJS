@@ -1,13 +1,15 @@
 .header{
-   position: fixed;
-   width: 100%;
-   top: 0;
+   position:sticky;
    z-index: 1000;
+   top: 0;
+   width: 100%;
    background-color: white;
+   
     .navbar{
       display: flex;
       flex-direction: column;
       padding: 0%;
+      position: unset;
       
         .buscador{
            display: flex;
@@ -54,12 +56,6 @@
                    
             }
         }
-      
-      
-
-
-
-
         .navProductos{
               
               margin-top: 1rem;
@@ -77,37 +73,14 @@
                                 color:white;
                                 background-color: black;
                                 border-radius: .50rem;
-                                 
-                             
-
                            }
 
                          .botonesCategoria:hover{
                            background-color: white;
                            color: black;
                          }
-
-
-
                        }
-
-
-
-
-
-
                     }
-
-
-
-
-
-
-
-
-
-
         }
     }
-
 }
