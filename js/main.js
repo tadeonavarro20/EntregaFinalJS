@@ -3,7 +3,7 @@ const productos = [
  {
    id: "remera-01",
    titulo: "Remera Madness - Negra",
-   imagen: "./assets/img/remera.webp",
+   imagen: "../assets/img/remera.webp",
    categoria: {
      nombre: "Remera",
      id: "remera"
@@ -15,7 +15,7 @@ const productos = [
  {
   id: "pantalon-01",
   titulo: "Pantalon Mora - Amarillo",
-  imagen: "./assets/img/pantalonAmarillo.jpg",
+  imagen: "../assets/img/pantalonAmarillo.jpg",
   categoria: {
     nombre: "Pantalon",
     id: "Pantalon"
@@ -26,7 +26,7 @@ const productos = [
 {
   id: "buzo-01",
   titulo: "Buzo Falling Star - Negro",
-  imagen: "./assets/img/buzo.webp",
+  imagen: "../assets/img/buzo.webp",
   categoria: {
     nombre: "Buzo",
     id: "buzo"
@@ -38,7 +38,7 @@ const productos = [
 {
   id: "zapatilla-01",
   titulo: "Zapatilla Union LA - Azul",
-  imagen: "./assets/img/zapatilla.jpg",
+  imagen: "../assets/img/zapatilla.jpg",
   categoria: {
     nombre: "Remera",
     id: "remera"
