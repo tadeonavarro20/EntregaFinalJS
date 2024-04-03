@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link bootstrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- link toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <!-- link css -->
     <link rel="stylesheet" href="./css/styles.css">
     <title>Carrito de compras</title>
@@ -12,14 +14,12 @@
 <body>
     <header class="header"> 
 
-        <nav class="navbar ">
+        <nav class="navbar">
            
               <div class="buscador">
+
                <a href="./index.html">Trendy Threads</a>
-               <form class="d-flex" role="search">
-                   <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
-                   <button type="submit">Buscar</button>
-                 </form>
+               
 
                  <a class="carrito" href="./carrito.html">
                             
@@ -30,22 +30,7 @@
 
               </div>  
 
-             <div class="navProductos">
-               <ul>
-                 <li>
-                   <button class="botonesCategoria">Remeras</button>
-               </li>
-                <li>
-                   <button class="botonesCategoria">Pantalones</button>
-                </li>
-                <li>
-                   <button class="botonesCategoria">Buzos</button>
-                </li>
-                <li>
-                   <button class="botonesCategoria">Zapatillas</button>
-                </li>
-               </ul>
-             </div>
+             
     
          </nav>
            
@@ -62,27 +47,40 @@
       
   </div>
 <div class="contenedorCarrito">
+                                                              <div id="contenedor-carrito-vacio" class="vacio">
+        <p  id="carritoVacio" class="carritoVacio" >Tu carrito esta vacio <img src="./assets/img/caritaTriste.png" alt=""></p>
+      </div>
+                                                               
+                                                               <div id="contenedor-carrito-productos" class="productos disabled">
+        <div id="carritoProductos" class="contenedor-productos">
+          <!-- se rellena con js -->
+        </div>
 
-  <p class="carritoVacio" id="carritoVacio">Tu carrito esta vacio <img src="./assets/img/caritaTriste.png" alt=""></p>
+      </div>
+                                                                 <div id="contenedor-carrito-acciones" class="acciones">
 
- <div id="carritoProductos" class="carritoProductos disabled">
-     <!-- se rellena con js -->
-   </div>
-<div id="carritoAcciones" class="carritoAcciones disabled">
-     <div class="accionesIzquierda">
-          <button id="vaciarCarrito" class="accionVaciar">Vaciar carrito</button>
-     </div>
- 
-     <div class="accionesDerecha">
-        <p>Total:</p>
-        <p id="total">$3000</p>
-        <button id="comprarCarrito" class="accionComprar">Comprar ahora</button>
-        
-   </div>
-  
+        <div id="carritoAcciones" class="carrito-acciones">
+          <div class="accionesIzquierda">
+               <button id="vaciarCarrito" class="accionVaciar">Vaciar carrito</button>
+          </div>
+      
+          <div class="accionesDerecha">
+             <p>Total:</p>
+             <p id="total">$3000</p>
+             <button id="comprarCarrito" class="accionComprar">Comprar ahora</button>
+             
+        </div>
+       
+     
+        </div>
 
-   </div>
-  <p id="carritoComprado" class="carrito-comprado disabled"> Muchas gracias por tu compra. <img src="./assets/img/icons8-happy-30.png" alt=""></p>
+       </div>
+       
+                                                                 <div id="contenedor-carrito-comprado" class="comprado">
+        <p id="carritoComprado" class="carrito-comprado"> Muchas gracias por tu compra. <img src="./assets/img/icons8-happy-30.png" alt=""></p>
+
+      </div>
+                                                         
   </div>
   
  </main>
@@ -93,6 +91,8 @@
 
  <!-- link bootstrap  -->
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="./js/carrito.js"></script>
 </body>
 </html>

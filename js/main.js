@@ -1,57 +1,14 @@
-const productos = [
-  // Remeras
- {
-   id: "remera-01",
-   titulo: "Remera Madness - Negra",
-   imagen: "../assets/img/remera.webp",
-   categoria: {
-     nombre: "Remera",
-     id: "remera"
-   },
-   precio: 1000
- },
+let productos = [];
 
-//  Pantalones
- {
-  id: "pantalon-01",
-  titulo: "Pantalon Mora - Amarillo",
-  imagen: "../assets/img/pantalonAmarillo.jpg",
-  categoria: {
-    nombre: "Pantalon",
-    id: "Pantalon"
-  },
-  precio: 2000
-},
-// Buzos
-{
-  id: "buzo-01",
-  titulo: "Buzo Falling Star - Negro",
-  imagen: "../assets/img/buzo.webp",
-  categoria: {
-    nombre: "Buzo",
-    id: "buzo"
-  },
-  precio: 3000
-},
+fetch("js/productos.json")
+   .then(response => response.json())
+  .then(data => {
+ 
+     productos = data;
+     cargarProductos(productos);
 
-// Zapatillas
-{
-  id: "zapatilla-01",
-  titulo: "Zapatilla Union LA - Azul",
-  imagen: "../assets/img/zapatilla.jpg",
-  categoria: {
-    nombre: "Remera",
-    id: "remera"
-  },
-  precio: 4000
-
-}
-
-];
-
-
-
-
+  })
+    
 const contenedorProductos = document.querySelector ("#productosDestacados");
 let botones = document.querySelectorAll(".boton");
 const numerito = document.querySelector("#numerito");
@@ -86,10 +43,6 @@ function cargarProductos(){
   
 }
 
-
-cargarProductos();
-
-
 function actualizarBotones() {
   botones = document.querySelectorAll(".boton");
 
@@ -113,11 +66,22 @@ if (productosCarritoLs){
    productosCarrito = [];
 }
 
-
-
-
-
 function agregarAlCarrito(e) {
+  Toastify({
+    text: "Agregado al carrito",
+    duration: 1300,
+    destination: "./carrito.html",
+    newWindow: true,
+    close: true,
+    gravity: "bottom", // `top` or `bottom`
+    position: "right", // `left`, `center` or `right`
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+    style: {
+      background: "linear-gradient(to right, #000, #000)",
+      borderRadius: "2rem",
+    },
+    onClick: function(){} // Callback after click
+  }).showToast();
 
    const idBoton = e.currentTarget.id;
    const productoAgregado = productos.find(producto => producto.id === idBoton);
@@ -135,8 +99,6 @@ function agregarAlCarrito(e) {
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosCarrito));
 }
 
-
-
 function actualizarNumero() {
  
     let nuevoNumero = productosCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
@@ -144,7 +106,3 @@ function actualizarNumero() {
     numerito.innerText = nuevoNumero;
 
 }
-
-
-
-
